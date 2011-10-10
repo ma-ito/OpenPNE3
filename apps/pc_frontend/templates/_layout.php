@@ -4,7 +4,12 @@
 <?php include_http_metas() ?>
 <?php include_metas() ?>
 <?php include_title() ?>
+<?php if (sfContext::getInstance()->getActionName() != 'login'): ?>
 <?php include_stylesheets() ?>
+<?php else: ?>
+<?php $root_dir = dirname($sf_request->getScriptName()) ?>
+<link rel="stylesheet" type="text/css" media="screen" href="<?php echo $root_dir.'/login/login.css'?>" />
+<?php endif; ?>
 <?php include_javascripts() ?>
 <?php if (Doctrine::getTable('SnsConfig')->get('customizing_css')): ?>
 <link rel="stylesheet" type="text/css" href="<?php echo url_for('@customizing_css') ?>" />
@@ -17,6 +22,7 @@
 <?php echo $op_config->get('pc_html_top') ?>
 <div id="Container">
 
+<?php if (sfContext::getInstance()->getActionName() != 'login'): ?>
 <div id="Header">
 <div id="HeaderContainer">
 <?php include_partial('global/header') ?>
@@ -63,11 +69,13 @@ include_component('default', 'localNav', $localNavOptions);
 <?php include_slot('op_sidemenu') ?>
 </div><!-- Left -->
 <?php endif; ?>
+<?php endif; ?>
 
 <div id="Center">
 <?php echo $sf_content ?>
 </div><!-- Center -->
 
+<?php if (sfContext::getInstance()->getActionName() != 'login'): ?>
 <?php if (has_slot('op_bottom')): ?>
 <div id="Bottom">
 <?php include_slot('op_bottom') ?>
@@ -88,6 +96,7 @@ include_component('default', 'localNav', $localNavOptions);
 <?php include_partial('global/footer') ?>
 </div><!-- FooterContainer -->
 </div><!-- Footer -->
+<?php endif; ?>
 
 <?php echo $op_config->get('pc_html_bottom2') ?>
 </div><!-- Container -->

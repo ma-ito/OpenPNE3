@@ -1,0 +1,76 @@
+body{
+	text-align:left;
+	-webkit-text-size-adjust: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#MailAddressLogin input#authMailAddress_mail_address {
+	display: block;
+	position: absolute;
+	left: 735px;
+	top: 292px;
+	width: 185px;
+	height: 21px;
+	font-size: 10pt;
+}
+
+div#MailAddressLogin input#authMailAddress_password {
+	display: block;
+	position: absolute;
+	left: 735px;
+	top: 347px;
+	width: 185px;
+	height: 21px;
+	font-size: 10pt;
+}
+
+div#MailAddressLogin input#authMailAddress_is_remember_me {
+	display: block;
+	position: absolute;
+	left: 750px;
+	top: 384px;
+}
+
+div#MailAddressLogin input#button_login {
+	display: block;
+	position: absolute;
+	left: 782px;
+	top: 430px;
+	width: 98px;
+	height: 31px;
+	border: none 0px;
+	background-color: transparent;
+}
+
+div#MailAddressLogin label.remember_msg {
+	display: block;
+	position: absolute;
+	left: 772px;
+	top: 388px;
+	width: 185px;
+	font-size: 9pt;
+}
+
+div#MailAddressLogin span.password_query {
+	display: block;
+	position: absolute;
+	left: 747px;
+	top: 403px;
+	width: 170px;
+	font-size: 9pt;
+	text-align: center;
+}
+
+div.footer {
+	display: block;
+	position: absolute;
+	border: none 0px;
+	padding: 3px 0px;
+	left: 530px;
+	top: 608px;
+	width: 430px;
+	height: 42px;
+	font-size: 9pt;
+	text-align: right;
+}
