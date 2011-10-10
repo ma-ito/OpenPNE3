@@ -20,5 +20,5 @@
 
 <div class="footer">
 <?php echo link_to(__('Privacy policy'), '@privacy_policy', array('target' => '_blank')); ?> 
-<?php echo link_to(__('Terms of service'), '@user_agreement', array('target' => '_blank')); ?>
+<?php echo link_to(__('Terms of service'), '@user_agreement', array('target' => '_blank')); ?> Powered by <a href="http://www.openpne.jp/" target="_blank">OpenPNE</a>
 </div>
